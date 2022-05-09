@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
-
+ 
   constructor(private myhttp:HttpClient) { }
   getProfile(){
     return this.myhttp.get('http://localhost:4200/api/users')
